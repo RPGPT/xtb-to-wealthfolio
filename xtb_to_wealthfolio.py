@@ -1,7 +1,5 @@
 """Convert XTB Excel exports into Wealthfolio-friendly CSV output."""
 
-# pylint: disable=invalid-name
-
 import re
 import secrets
 from pathlib import Path
@@ -121,10 +119,10 @@ def choose_input_xlsx():
         print("Invalid choice. Try again.")
 
 
-def make_output_path(base_dir: Path):
+def make_output_path(output_dir: Path):
     """Create a randomized output CSV path in the working directory."""
     random_hash = secrets.token_hex(6)
-    return base_dir / f"{OUTPUT_PREFIX}{random_hash}.csv"
+    return output_dir / f"{OUTPUT_PREFIX}{random_hash}.csv"
 
 
 def find_col(dataframe, names):
