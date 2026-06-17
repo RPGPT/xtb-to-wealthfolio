@@ -66,13 +66,12 @@ It is particularly helpful when comments contain patterns like:
 ## Requirements
 
 - Python 3.10+
-- `pandas`
-- `openpyxl`
+- A `requirements.txt` file is included in the repo
 
 Install dependencies with:
 
 ```bash
-pip install pandas openpyxl
+pip install -r requirements.txt
 ```
 
 ## Usage
