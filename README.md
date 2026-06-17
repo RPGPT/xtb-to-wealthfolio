@@ -79,7 +79,7 @@ pip install -r requirements.txt
 Place your XTB `.xlsx` exports in the same folder as the script, then run:
 
 ```bash
-python xtbToWealthfolio.py
+python xtb_to_wealthfolio.py
 ```
 
 If the script is interactive, it will list the available `.xlsx` files and ask you to choose one.
